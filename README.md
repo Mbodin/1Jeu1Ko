@@ -5,3 +5,5 @@ All games are playable at: mbodin.github.io/1Jeu1Ko/
 Pull request are welcomed.
 Sharing is also welcomed (suggested hashtag #1Jeu1Ko).
 Enjoy!
+
+This README’s size is 338 bytes.
