@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head><style>html{background:#334}body{margin:0 auto;max-width:42em;padding:1em;color:#eee}#g{background:#000}</style><title>Maze</title></head><body><h1>Maze</h1><p>Game size is 911 bytes</p><canvas id="g" width="639" height="369"></canvas><script>f="fillRect";e="clearRect";g=document.getElementById("g");c=g.getContext("2d");c.fillStyle="#eee";r=i=>Math.floor(i*Math.random());
+c[f](0,0,639,369);
+a=(i,f)=>Array(i).fill().map(_=>f());
+t=a(72,_=>a(42,_=>[0,{}]));
+h=[-1,0];j=[0,-1];k=[0,1];l=[1,0];
+t[1][0][0]=t[69][40][0]=1;
+
+p=o=>o.n?p(o.n):o;
+P=(x,y)=>p(t[x][y][1]);
+
+a=i=>1+2*r(i);
+
+n=(x,y,z,w)=>(t[z][w][0]=1,z=P(z,w),x=P(x,y),z!=x?z.n=x:0);
+m=(x,y,[z,w])=>n(x,y,x+z,y+w,n(x,y,x+2*z,y+2*w));
+
+while(P(1,1)!=P(69,39)){x=a(35);y=a(19);m(x,y,r(2)?r(2)?x<2?l:h:y<2?k:j:r(2)?y>38?j:k:x>68?h:l);t[x][y][0]=1}
+
+t.map((t,x)=>t.map((v,y)=>v[0]?c[e](9*x,9*y,9,9):0))
+
+
+</script></body></html>
