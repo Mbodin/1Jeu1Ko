@@ -6,4 +6,4 @@ Pull request are welcomed.
 Sharing is also welcomed (suggested hashtag #1Jeu1Ko).
 Enjoy!
 
-This README’s size is 338 bytes.
+This README's size is 344 bytes.
