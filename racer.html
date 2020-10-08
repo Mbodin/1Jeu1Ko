@@ -15,3 +15,31 @@ c.drawArrays(c.TRIANGLES,0,3)
 /*??*/
 },20);
 g.addEventListener("mousemove",v=>w=v.offsetX/640)</script></body></html>
+<!--
+		function createFace(w, h, x, y, z, rx, ry, rz, tsrc, tx, ty) {
+    var alpha = Math.cos(rx/1.5) * Math.cos(ry/2),
+        grad = "linear-gradient(rgba(0,0,0," + alpha.toFixed(2) +"),rgba(0,0,0," + alpha.toFixed(2) +"))",
+        face = document.createElement("div");
+    face.className = "threedee face";
+    face.style.cssText = PrefixFree.prefixCSS(
+        "background: " + grad + ", url(" + tsrc + ") -" + tx.toFixed(2) + "px " + ty.toFixed(2) + "px;" +
+        "mask-image: url(" + tsrc + ");" +
+        "mask-position: -" + tx.toFixed(2) + "px " + ty.toFixed(2) + "px;" +
+        "width:" + w.toFixed(2) + "px;" +
+        "height:" + h.toFixed(2) + "px;" +
+        "margin-top: -" + (h / 2).toFixed(2) + "px;" +
+        "margin-left: -" + (w / 2).toFixed(2) + "px;" +
+        "transform: translate3d(" + x.toFixed(2) + "px," + y.toFixed(2) + "px," + z.toFixed(2) + "px)" +
+        "rotateX(" + rx.toFixed(2) + "rad) rotateY(" + ry.toFixed(2) + "rad) rotateY(" + rz.toFixed(2) + "rad);");
+    return face;
+}
+
+.threedee {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+-->
+
