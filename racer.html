@@ -1,5 +1,5 @@
-<!DOCTYPE html><html><head><style>html{background:#334}body{margin:0 auto;max-width:42em;padding:1em;color:#eee}#g{background:#000}</style><title>Racer</title></head><body><h1>Racer</h1><p>Game size is ??? bytes</p><canvas id="g" width="640" height="360"></canvas><script>
-g=document.getElementById("g");c=g.getContext("webgl");
+<!DOCTYPE html><html><head><style>body{background:#334;margin:0 auto;max-width:42em;padding:1em;color:#eee}#g{background:#000}</style><title>Racer</title></head><body><h1>Racer</h1><p>Game size is ??? bytes</p><canvas id="g" width="640" height="360"></canvas><script>
+g=document.getElementById`g`;c=g.getContext`webgl`;
 c.enable(c.DEPTH_TEST);
 c.clearColor(0,0,0,1);
 d=[0,0,0,
@@ -9,12 +9,12 @@ a=c.ARRAY_BUFFER;
 c.bindBuffer(a,c.createBuffer());
 c.bufferData(a,Float32Array(d),c.STATIC_DRAW);
 c.vertexAttribPointer
-window.setInterval(_=>{
+this.setInterval(_=>{
 c.clear(c.COLOR_BUFFER_BIT|c.DEPTH_BUFFER_BIT); // c.clear(-1);
 c.drawArrays(c.TRIANGLES,0,3)
 /*??*/
 },20);
-g.addEventListener("mousemove",v=>w=v.offsetX/640)</script></body></html>
+g.onmousemove=v=>w=v.offsetX/640</script></body></html>
 <!--
 		function createFace(w, h, x, y, z, rx, ry, rz, tsrc, tx, ty) {
     var alpha = Math.cos(rx/1.5) * Math.cos(ry/2),
